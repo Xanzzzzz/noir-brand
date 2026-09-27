@@ -1,0 +1,225 @@
+/* ==========================================================================
+   NOIR CLOTHING CO. — Responsive
+   ========================================================================== */
+
+/* Custom cursor: desktop only, enabled via JS after checking pointer:fine */
+@media (hover: none), (pointer: coarse) {
+  .cursor-dot,
+  .cursor-ring {
+    display: none !important;
+  }
+}
+
+/* ---- Large desktop / laptop (<=1280) ---- */
+@media (max-width: 1280px) {
+  :root {
+    --gutter: 26px;
+  }
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px 18px;
+  }
+  .footer-cols {
+    gap: 46px;
+  }
+}
+
+/* ---- Tablet (<=1024) ---- */
+@media (max-width: 1024px) {
+  .nav-center {
+    display: none;
+  }
+  .nav-burger {
+    display: flex;
+  }
+  .drop-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .drop-facts {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+  }
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .category-tile:nth-child(2) {
+    border-right: none;
+  }
+  .editorial {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .editorial-media {
+    height: 60vh;
+  }
+  .editorial-bignum {
+    display: none;
+  }
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .product-detail {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 130px;
+  }
+  .product-panel {
+    position: static;
+  }
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+  .summary-box {
+    position: static;
+  }
+  .newsletter-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .newsletter-form {
+    width: 100%;
+    min-width: 0;
+  }
+  .footer-top {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+/* ---- Mobile (<=767) ---- */
+@media (max-width: 767px) {
+  :root {
+    --gutter: 20px;
+    --nav-h: 64px;
+  }
+
+  .announce {
+    font-size: 10.5px;
+    padding: 0 40px;
+    text-align: center;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+    padding-bottom: 40px;
+  }
+  .hero-aside {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .hero-scroll {
+    writing-mode: horizontal-tb;
+  }
+
+  .section-pad {
+    padding: 80px 0;
+  }
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 36px;
+  }
+
+  .rail .product-card {
+    min-width: 62vw;
+  }
+  .rail-controls {
+    display: none;
+  }
+  .overlap-strip {
+    margin-top: -50px;
+  }
+
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .category-tile {
+    aspect-ratio: 3/4;
+  }
+
+  .brand-section {
+    padding: 100px 0;
+  }
+
+  .footer-cols {
+    gap: 36px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .footer-mid .display-xl {
+    font-size: 2.6rem;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .page-header {
+    padding: 110px 0 30px;
+  }
+
+  .shop-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .shop-tabs {
+    overflow-x: auto;
+    width: 100%;
+    padding-bottom: 4px;
+  }
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 12px;
+  }
+  .wishlist-toggle {
+    width: 30px;
+    height: 30px;
+  }
+  .quick-add {
+    display: none;
+  }
+
+  .product-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .product-actions {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 150;
+    background: var(--bg-raised);
+    border-top: 1px solid var(--border);
+    padding: 14px var(--gutter);
+    margin: 0;
+  }
+  .product-detail {
+    padding-bottom: 90px;
+  }
+
+  .cart-drawer {
+    width: 100vw;
+  }
+
+  .drop-facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .category-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-cols {
+    flex-wrap: wrap;
+  }
+}

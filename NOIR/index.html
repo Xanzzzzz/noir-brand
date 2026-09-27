@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NOIR CLOTHING CO. — Everyday Essentials</title>
+<meta name="description" content="NOIR CLOTHING CO. — dark, premium streetwear essentials. Drop 001 is live." />
+<link rel="icon" href="assets/logo/noir-logo.jpg" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/animations.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+<div class="loader" data-loader>
+  <img src="assets/logo/noir-logo.jpg" alt="NOIR" />
+</div>
+
+<!-- ANNOUNCEMENT -->
+<div class="announce" data-announce>
+  <span>FREE SHIPPING ON ORDERS OVER RP500K</span>
+  <button class="announce-close" data-announce-close aria-label="Dismiss">✕</button>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="navbar container" data-navbar>
+    <a href="index.html" class="nav-logo">NOIR</a>
+    <nav class="nav-center">
+      <a href="shop.html?category=all" class="is-active">NEW DROP</a>
+      <a href="shop.html">SHOP</a>
+      <a href="shop.html">COLLECTIONS</a>
+      <a href="shop.html">LOOKBOOK</a>
+      <a href="shop.html">JOURNAL</a>
+    </nav>
+    <div class="nav-right">
+      <button class="icon-btn" data-search-open aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <a href="account.html" class="icon-btn" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+      <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
+        <i class="fa-regular fa-heart"></i>
+        <span class="count" data-wishlist-count>0</span>
+      </a>
+      <button class="icon-btn" data-cart-open aria-label="Bag">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="count" data-cart-count>0</span>
+      </button>
+      <button class="nav-burger" data-burger aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" data-search-overlay>
+  <button class="search-close" data-search-close aria-label="Close search"><i class="fa-solid fa-xmark"></i></button>
+  <div class="search-box">
+    <input type="text" placeholder="Search pieces, categories, SKUs…" autocomplete="off" />
+    <div class="search-results" data-search-results></div>
+  </div>
+</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" data-mobile-menu>
+  <button class="mobile-menu-close" data-mobile-menu-close aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  <nav>
+    <a href="shop.html?category=all">New Drop</a>
+    <a href="shop.html">Shop</a>
+    <a href="shop.html">Collections</a>
+    <a href="shop.html">Lookbook</a>
+    <a href="shop.html">Journal</a>
+  </nav>
+  <div class="mobile-menu-foot">
+    <a href="account.html">Account</a>
+    <a href="wishlist.html">Wishlist</a>
+  </div>
+</div>
+
+<!-- CART DRAWER -->
+<div class="overlay-scrim" data-scrim></div>
+<aside class="cart-drawer" data-cart-drawer>
+  <div class="drawer-head">
+    <h3>YOUR BAG</h3>
+    <button class="icon-btn" data-cart-close aria-label="Close bag"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div class="drawer-items" data-cart-drawer-items></div>
+  <div class="drawer-foot" data-cart-drawer-foot>
+    <div class="drawer-subtotal"><span>Subtotal</span><strong data-cart-subtotal>Rp0</strong></div>
+    <div class="drawer-actions">
+      <a href="cart.html" class="btn btn-outline btn-full">VIEW BAG</a>
+      <a href="checkout.html" class="btn btn-primary btn-full">CHECKOUT →</a>
+    </div>
+  </div>
+</aside>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" data-hero>
+    <div class="hero-media">
+      <img src="assets/hero/hero-main.svg" alt="NOIR Drop 001 editorial" />
+    </div>
+    <div class="hero-content">
+      <div class="hero-copy">
+        <span class="eyebrow">NOIR / 001</span>
+        <h1 class="display-xl hero-headline">
+          <span>THE NEW</span><br />
+          <span>EVERYDAY.</span>
+        </h1>
+        <p>Eight pieces built for the four seasons you actually live in. Heavyweight cotton, cut wide, worn often.</p>
+        <a href="shop.html?category=all" class="btn btn-primary" data-cursor="SHOP">SHOP THE DROP</a>
+      </div>
+      <div class="hero-aside">
+        <span class="hero-count">01 / 03</span>
+        <span class="hero-scroll">SCROLL TO EXPLORE <i class="fa-solid fa-arrow-down"></i></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- DROP SECTION -->
+  <section class="drop-section section-pad">
+    <div class="container">
+      <div class="drop-grid">
+        <div class="reveal">
+          <span class="eyebrow">DROP 001</span>
+          <h2 class="display-lg" style="margin-top:14px;">THE EVERYDAY<br />UNIFORM.</h2>
+        </div>
+        <div class="drop-facts reveal">
+          <span>08 PIECES</span>
+          <span>03 COLORWAYS</span>
+          <span>LIMITED RELEASE</span>
+          <a href="shop.html?category=all" class="btn btn-outline">EXPLORE DROP →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container overlap-strip">
+      <div class="rail-wrap">
+        <div class="rail-controls">
+          <button data-rail-prev aria-label="Scroll left"><i class="fa-solid fa-arrow-left"></i></button>
+          <button data-rail-next aria-label="Scroll right"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="rail" data-rail data-home-rail="drop"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORY GRID -->
+  <section class="section-pad-sm">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">SHOP BY CATEGORY</span>
+          <h2 class="display-md">Find your piece.</h2>
+        </div>
+      </div>
+    </div>
+    <div class="category-grid">
+      <a href="shop.html?category=sweatpants" class="category-tile reveal">
+        <img src="assets/collections/cat-sweatpants.svg" alt="Sweatpants" />
+        <div class="category-tile-content">
+          <span class="category-num">01</span>
+          <div class="category-tile-bottom">
+            <h3>Sweatpants</h3>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+      <a href="shop.html?category=hoodies" class="category-tile reveal">
+        <img src="assets/collections/cat-hoodies.svg" alt="Hoodies" />
+        <div class="category-tile-content">
+          <span class="category-num">02</span>
+          <div class="category-tile-bottom">
+            <h3>Hoodies</h3>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+      <a href="shop.html?category=tops" class="category-tile reveal">
+        <img src="assets/collections/cat-tops.svg" alt="Tops" />
+        <div class="category-tile-content">
+          <span class="category-num">03</span>
+          <div class="category-tile-bottom">
+            <h3>Tops</h3>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+      <a href="shop.html?category=outerwear" class="category-tile reveal">
+        <img src="assets/collections/cat-outerwear.svg" alt="Outerwear" />
+        <div class="category-tile-content">
+          <span class="category-num">04</span>
+          <div class="category-tile-bottom">
+            <h3>Outerwear</h3>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- EDITORIAL -->
+  <section class="editorial">
+    <div class="editorial-media reveal">
+      <img src="assets/lookbook/editorial-portrait.svg" alt="NOIR Essentials editorial" />
+    </div>
+    <div class="editorial-copy reveal">
+      <span class="editorial-bignum">01</span>
+      <span class="eyebrow">NOIR / ESSENTIALS</span>
+      <h2 class="display-lg">BUILT FOR<br />EVERYDAY.</h2>
+      <p class="body-text">No seasonal gimmicks — just the pieces you reach for on repeat, made heavier, cut wider, and finished to last past one wash cycle.</p>
+      <a href="shop.html" class="link-arrow">DISCOVER ESSENTIALS <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <div class="marquee-track" data-marquee>
+      <span>NOIR CLOTHING CO.</span><span>EVERYDAY ESSENTIALS</span>
+    </div>
+  </div>
+
+  <!-- LATEST PIECES RAIL -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">JUST LANDED</span>
+          <h2 class="display-md">Latest Pieces</h2>
+        </div>
+      </div>
+      <div class="rail-wrap">
+        <div class="rail-controls">
+          <button data-rail-prev aria-label="Scroll left"><i class="fa-solid fa-arrow-left"></i></button>
+          <button data-rail-next aria-label="Scroll right"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="rail" data-rail data-home-rail="latest"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOP THE LOOK -->
+  <section class="shop-look">
+    <img src="assets/lookbook/look-1.svg" alt="Shop the look editorial" />
+    <div class="hotspot" style="top:32%; left:44%;" data-hotspot="N01">
+      <span class="hotspot-dot"></span>
+    </div>
+    <div class="hotspot" style="top:58%; left:60%;" data-hotspot="N02">
+      <span class="hotspot-dot"></span>
+    </div>
+    <div class="hotspot" style="top:20%; left:58%;" data-hotspot="N07">
+      <span class="hotspot-dot"></span>
+    </div>
+    <div class="hotspot-card" data-hotspot-card></div>
+  </section>
+  <div class="shop-look-foot">
+    <a href="shop.html?category=all" class="btn btn-outline">SHOP THE FULL LOOK</a>
+  </div>
+
+  <!-- BRAND SECTION -->
+  <section class="brand-section">
+    <div class="container reveal">
+      <span class="display-xl">NOIR</span>
+      <h2 class="display-lg">NOT JUST<br />WHAT YOU WEAR.</h2>
+      <p>NOIR is built for the space between dressed-up and dressed-down — everyday clothing made with the weight and construction usually reserved for pieces you only wear once.</p>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter">
+    <div class="container newsletter-inner">
+      <div class="newsletter-copy reveal">
+        <h2 class="display-md">JOIN THE NOIR LIST</h2>
+        <p>Get first access to new drops, restocks and exclusive releases.</p>
+      </div>
+      <form class="newsletter-form reveal" data-newsletter-form>
+        <div class="newsletter-field">
+          <input type="email" placeholder="EMAIL ADDRESS" required />
+          <button type="submit" aria-label="Join"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="newsletter-msg" data-newsletter-msg></div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <span class="nav-logo">NOIR</span>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/noir.wearofficial/?utm_source=ig_web_button_share_sheet" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>SHOP</h4>
+        <a href="shop.html?category=all">New Drop</a>
+        <a href="shop.html?category=sweatpants">Sweatpants</a>
+        <a href="shop.html?category=tops">Tops</a>
+        <a href="shop.html?category=hoodies">Hoodies</a>
+        <a href="shop.html?category=outerwear">Outerwear</a>
+      </div>
+      <div class="footer-col">
+        <h4>EXPLORE</h4>
+        <a href="shop.html">Lookbook</a>
+        <a href="shop.html">Journal</a>
+        <a href="shop.html">Archive</a>
+        <a href="shop.html">About</a>
+      </div>
+      <div class="footer-col">
+        <h4>HELP</h4>
+        <span>Contact</span>
+        <span>Shipping</span>
+        <span>Returns</span>
+        <span>Size Guide</span>
+        <span>FAQ</span>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-mid">
+    <span class="display-xl">SEE YOU<br />AFTER DARK.</span>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 NOIR CLOTHING CO.</span>
+    <span>Bandung, Indonesia</span>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/wishlist.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/app.js"></script>
+<script src="js/animations.js"></script>
+<script>
+  // Home-page-only: populate the two horizontal rails and shop-the-look hotspots
+  document.addEventListener("DOMContentLoaded", () => {
+    const drop = window.NOIR_PRODUCTS.slice(0, 6);
+    const latest = window.NOIR_PRODUCTS.filter((p) => p.tags.includes("new"));
+    document.querySelector('[data-home-rail="drop"]').innerHTML = drop.map(NOIR.renderProductCard).join("");
+    document.querySelector('[data-home-rail="latest"]').innerHTML = latest.map(NOIR.renderProductCard).join("");
+    document.querySelectorAll('[data-home-rail]').forEach((rail) => {
+      NOIR.wireProductCards(rail);
+      NOIR.observeReveal(rail);
+    });
+
+    // Shop the look hotspots
+    const card = document.querySelector("[data-hotspot-card]");
+    document.querySelectorAll("[data-hotspot]").forEach((spot) => {
+      spot.addEventListener("click", () => {
+        const sku = spot.getAttribute("data-hotspot");
+        const product = NOIR.getProductBySku(sku);
+        if (!product) return;
+        const isOpen = card.classList.contains("is-open") && card.dataset.sku === sku;
+        document.querySelectorAll('.hotspot-card').forEach(c => c.classList.remove('is-open'));
+        if (isOpen) return;
+        card.dataset.sku = sku;
+        card.style.top = spot.style.top;
+        card.style.left = `calc(${spot.style.left} + 30px)`;
+        card.innerHTML = `
+          <img src="${product.images[0]}" alt="${product.name}" />
+          <h4>${product.sku} — ${product.name}</h4>
+          <p>${NOIR.formatPrice(product.price)}</p>
+          <button class="btn btn-primary btn-full" data-hotspot-add="${product.sku}">ADD TO BAG</button>`;
+        card.classList.add("is-open");
+        card.querySelector("[data-hotspot-add]").addEventListener("click", () => {
+          NOIR.addToCart(product, product.colors[0].name, product.sizes.find(s => product.stock[s] > 0) || product.sizes[0], 1);
+          NOIR.openCartDrawer();
+          card.classList.remove("is-open");
+        });
+      });
+    });
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest("[data-hotspot]") && !e.target.closest("[data-hotspot-card]")) {
+        card.classList.remove("is-open");
+      }
+    });
+  });
+</script>
+</body>
+</html>

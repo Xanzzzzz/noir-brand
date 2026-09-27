@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Account — NOIR CLOTHING CO.</title>
+<link rel="icon" href="assets/logo/noir-logo.jpg" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/animations.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+<style>
+  .account-page { padding:150px 0 120px; }
+  .account-layout { display:grid; grid-template-columns:240px 1fr; gap:60px; margin-top:50px; }
+  .account-nav a { display:flex; align-items:center; gap:12px; padding:14px 0; font-size:13px; color:var(--text-muted); border-bottom:1px solid var(--border); }
+  .account-nav a.is-active, .account-nav a:hover { color:var(--text-strong); }
+  .order-card { border:1px solid var(--border); padding:22px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:center; }
+  .order-status { font-size:11px; letter-spacing:.06em; padding:6px 12px; border:1px solid var(--border-strong); }
+  @media (max-width:1024px){ .account-layout{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="navbar container is-scrolled" data-navbar>
+    <a href="index.html" class="nav-logo">NOIR</a>
+    <nav class="nav-center">
+      <a href="shop.html?category=all">NEW DROP</a>
+      <a href="shop.html">SHOP</a>
+    </nav>
+    <div class="nav-right">
+      <a href="wishlist.html" class="icon-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span class="count" data-wishlist-count>0</span></a>
+      <button class="icon-btn" data-cart-open aria-label="Bag"><i class="fa-solid fa-bag-shopping"></i><span class="count" data-cart-count>0</span></button>
+    </div>
+  </div>
+</header>
+
+<div class="overlay-scrim" data-scrim></div>
+<aside class="cart-drawer" data-cart-drawer>
+  <div class="drawer-head"><h3>YOUR BAG</h3><button class="icon-btn" data-cart-close aria-label="Close bag"><i class="fa-solid fa-xmark"></i></button></div>
+  <div class="drawer-items" data-cart-drawer-items></div>
+  <div class="drawer-foot" data-cart-drawer-foot>
+    <div class="drawer-subtotal"><span>Subtotal</span><strong data-cart-subtotal>Rp0</strong></div>
+    <div class="drawer-actions">
+      <a href="cart.html" class="btn btn-outline btn-full">VIEW BAG</a>
+      <a href="checkout.html" class="btn btn-primary btn-full">CHECKOUT →</a>
+    </div>
+  </div>
+</aside>
+
+<main>
+  <div class="account-page container">
+    <span class="eyebrow">NOIR / ACCOUNT</span>
+    <h1 class="display-xl" style="margin-top:14px;">WELCOME BACK.</h1>
+
+    <div class="account-layout">
+      <nav class="account-nav">
+        <a href="#" class="is-active"><i class="fa-solid fa-box"></i> Orders</a>
+        <a href="wishlist.html"><i class="fa-regular fa-heart"></i> Wishlist</a>
+        <a href="#"><i class="fa-solid fa-location-dot"></i> Addresses</a>
+        <a href="#"><i class="fa-regular fa-user"></i> Profile</a>
+        <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+      </nav>
+
+      <div>
+        <h2 class="display-md" style="margin-bottom:24px;">Order History</h2>
+        <div class="order-card">
+          <div>
+            <div style="margin-bottom:6px;">#NOIR-10482</div>
+            <div class="meta-text">Placed 12 Sep 2026 · 2 items</div>
+          </div>
+          <span class="order-status">DELIVERED</span>
+        </div>
+        <div class="order-card">
+          <div>
+            <div style="margin-bottom:6px;">#NOIR-10367</div>
+            <div class="meta-text">Placed 2 Aug 2026 · 1 item</div>
+          </div>
+          <span class="order-status">DELIVERED</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="js/products.js"></script>
+<script src="js/wishlist.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

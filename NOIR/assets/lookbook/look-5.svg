@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" preserveAspectRatio="xMidYMid slice">
+  <rect width="900" height="1100" fill="#011010010"/>
+  <rect width="900" height="1100" fill="#0c0c0c"/>
+  <rect x="200" y="150" width="500" height="800" fill="#000" opacity="0.4"/>
+  <text x="450" y="580" text-anchor="middle" font-family="Georgia, serif" font-size="120" fill="#fff" fill-opacity="0.06">LOOK 5</text>
+</svg>

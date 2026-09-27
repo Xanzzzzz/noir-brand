@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" preserveAspectRatio="xMidYMid slice">
+  <rect width="900" height="1200" fill="#0c0c0c"/>
+  <rect x="0" y="0" width="900" height="1200" fill="#151515" opacity="0.5"/>
+  <rect x="300" y="300" width="300" height="750" fill="#000" opacity="0.35"/>
+  <text x="450" y="640" text-anchor="middle" font-family="Georgia, serif" font-size="160" fill="#fff" fill-opacity="0.07">01</text>
+</svg>

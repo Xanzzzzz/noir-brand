@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Saved Pieces — NOIR CLOTHING CO.</title>
+<link rel="icon" href="assets/logo/noir-logo.jpg" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/animations.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+<div class="announce" data-announce>
+  <span>FREE SHIPPING ON ORDERS OVER RP500K</span>
+  <button class="announce-close" data-announce-close aria-label="Dismiss">✕</button>
+</div>
+
+<header class="site-header">
+  <div class="navbar container is-scrolled" data-navbar>
+    <a href="index.html" class="nav-logo">NOIR</a>
+    <nav class="nav-center">
+      <a href="shop.html?category=all">NEW DROP</a>
+      <a href="shop.html">SHOP</a>
+      <a href="shop.html">COLLECTIONS</a>
+      <a href="shop.html">LOOKBOOK</a>
+      <a href="shop.html">JOURNAL</a>
+    </nav>
+    <div class="nav-right">
+      <button class="icon-btn" data-search-open aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <a href="account.html" class="icon-btn" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+      <a href="wishlist.html" class="icon-btn" aria-label="Wishlist">
+        <i class="fa-solid fa-heart"></i>
+        <span class="count" data-wishlist-count>0</span>
+      </a>
+      <button class="icon-btn" data-cart-open aria-label="Bag">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="count" data-cart-count>0</span>
+      </button>
+      <button class="nav-burger" data-burger aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</header>
+
+<div class="search-overlay" data-search-overlay>
+  <button class="search-close" data-search-close aria-label="Close search"><i class="fa-solid fa-xmark"></i></button>
+  <div class="search-box">
+    <input type="text" placeholder="Search pieces, categories, SKUs…" autocomplete="off" />
+    <div class="search-results" data-search-results></div>
+  </div>
+</div>
+
+<div class="mobile-menu" data-mobile-menu>
+  <button class="mobile-menu-close" data-mobile-menu-close aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+  <nav>
+    <a href="shop.html?category=all">New Drop</a>
+    <a href="shop.html">Shop</a>
+    <a href="shop.html">Collections</a>
+    <a href="shop.html">Lookbook</a>
+    <a href="shop.html">Journal</a>
+  </nav>
+  <div class="mobile-menu-foot">
+    <a href="account.html">Account</a>
+    <a href="wishlist.html">Wishlist</a>
+  </div>
+</div>
+
+<div class="overlay-scrim" data-scrim></div>
+
+<aside class="cart-drawer" data-cart-drawer>
+  <div class="drawer-head">
+    <h3>YOUR BAG</h3>
+    <button class="icon-btn" data-cart-close aria-label="Close bag"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+  <div class="drawer-items" data-cart-drawer-items></div>
+  <div class="drawer-foot" data-cart-drawer-foot>
+    <div class="drawer-subtotal"><span>Subtotal</span><strong data-cart-subtotal>Rp0</strong></div>
+    <div class="drawer-actions">
+      <a href="cart.html" class="btn btn-outline btn-full">VIEW BAG</a>
+      <a href="checkout.html" class="btn btn-primary btn-full">CHECKOUT →</a>
+    </div>
+  </div>
+</aside>
+
+<main>
+  <div class="wishlist-page container">
+    <span class="eyebrow">NOIR / WISHLIST</span>
+    <h1 class="display-xl" style="margin-top:14px;">SAVED PIECES.</h1>
+
+    <div data-wishlist-grid class="product-grid" style="margin-top:56px;"></div>
+
+    <div data-wishlist-empty class="state-empty" style="display:none;">
+      <i class="fa-regular fa-heart"></i>
+      <p class="display-md" style="margin-bottom:12px;">NOTHING SAVED YET.</p>
+      <p>Tap the heart on any piece to keep it here.</p>
+      <a href="shop.html" class="btn btn-primary">EXPLORE SHOP</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <span class="nav-logo">NOIR</span>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/noir.wearofficial/?utm_source=ig_web_button_share_sheet" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>SHOP</h4>
+        <a href="shop.html?category=all">New Drop</a>
+        <a href="shop.html?category=sweatpants">Sweatpants</a>
+      </div>
+      <div class="footer-col">
+        <h4>HELP</h4>
+        <span>Contact</span>
+        <span>Returns</span>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 NOIR CLOTHING CO.</span>
+    <span>Bandung, Indonesia</span>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/wishlist.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/app.js"></script>
+<script src="js/animations.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const grid = document.querySelector("[data-wishlist-grid]");
+    const empty = document.querySelector("[data-wishlist-empty]");
+    const products = NOIR.getWishlistProducts();
+    if (!products.length) {
+      grid.style.display = "none";
+      empty.style.display = "block";
+      return;
+    }
+    grid.innerHTML = products.map(NOIR.renderProductCard).join("");
+    NOIR.wireProductCards(grid);
+    NOIR.observeReveal(grid);
+  });
+</script>
+</body>
+</html>
